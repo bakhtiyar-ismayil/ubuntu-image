@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
     vim \
     sudo \
     iproute2 \
+    htop \
     openssh-server
 
 RUN useradd -m -s /bin/bash ansible \
