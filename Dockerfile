@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
     openssh-server
 
 RUN useradd -m -s /bin/bash ansible \
-    && echo "ansible:stepit" | chpasswd \
+    && echo "ansible:ansible" | chpasswd \
     && apt-get update && apt-get install -y \
     && echo "ansible ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers.d/ansible
 
